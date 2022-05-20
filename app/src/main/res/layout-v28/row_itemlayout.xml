@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:layout_marginVertical="100dp"
+    android:background="@drawable/custom"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:outlineAmbientShadowColor="@color/white" />
+
+    <TextView
+        android:id="@+id/item_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/checkbox"
+        android:text="Your Task"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:gravity="end"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@android:drawable/btn_dialog" />
+
+
+</RelativeLayout>
